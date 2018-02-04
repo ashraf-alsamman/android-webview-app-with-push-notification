@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_view_category_1"
+        android:title="@string/navigation_view_category_1">
+        <menu>
+            <item
+                android:id="@+id/navigation_item_1"
+                android:checked="true"
+                android:icon="@drawable/ic_launcher"
+                android:title="@string/navigation_view_item_1" />
+            <item
+                android:id="@+id/navigation_item_2"
+                android:icon="@drawable/viral_android"
+                android:title="@string/navigation_view_item_2" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/navigation_item_3"
+        android:icon="@drawable/google"
+        android:title="@string/navigation_view_item_3" />
+    <item
+        android:id="@+id/navigation_item_4"
+        android:icon="@drawable/viral_android"
+        android:title="@string/navigation_view_item_4" />
+    <item
+        android:id="@+id/navigation_item_5"
+        android:icon="@drawable/google"
+        android:title="@string/navigation_view_item_5" />
+</menu>

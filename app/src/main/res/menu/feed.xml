@@ -1,0 +1,71 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_view_category_1"
+        android:title="@string/navigation_view_category_1">
+
+        <item
+            android:id="@+id/navigation_item_1"
+            android:checked="true"
+            android:title="Timeline"
+            android:textSize="40sp"
+            android:icon="@drawable/all"
+
+            />
+
+        <item
+            android:id="@+id/navigation_item_2"
+            android:title="About"
+            android:textSize="40dp"
+            android:background="#937479"
+            android:icon="@drawable/business"
+            />
+
+
+
+        <item
+            android:id="@+id/navigation_item_3"
+            android:title="Friends"
+            android:icon="@drawable/usergroupmanman24"
+            />
+
+        <item
+            android:id="@+id/navigation_item_4"
+            android:title="Albums"
+            android:icon="@drawable/picture24"
+            />
+
+        <item
+            android:id="@+id/navigation_item_5"
+            android:title="Videos"
+            android:icon="@drawable/showingvideoframes24"
+            />
+
+        <item
+            android:id="@+id/navigation_item_6"
+            android:title="Resume"
+            android:icon="@drawable/resume24"
+            />
+
+        <item
+            android:id="@+id/navigation_item_7"
+            android:title="My businesses"
+            android:icon="@drawable/business"
+            />
+
+        <item
+            android:id="@+id/logout"
+            android:title="logout"
+            android:icon="@drawable/logoutroundeddown24"
+            />
+
+
+
+
+
+    </item>
+
+
+
+</menu>

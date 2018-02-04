@@ -1,0 +1,97 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_item_1"
+        android:title="Add Event"
+        android:icon="@drawable/addimage48"
+        />
+
+    <item
+        android:id="@+id/navigation_view_category_1"
+        android:title="@string/navigation_view_category_1">
+
+        <item
+            android:id="@+id/navigation_item_2"
+            android:checked="true"
+            android:title="My events"
+            android:textSize="40sp"
+            android:icon="@drawable/eventacceptedtentatively24"
+
+            />
+
+        <item
+            android:id="@+id/navigation_item_3"
+            android:title="Friends events"
+            android:textSize="40dp"
+            android:background="#937479"
+            android:icon="@drawable/talkmale24"
+            />
+
+        <item
+            android:id="@+id/navigation_item_4"
+            android:checked="true"
+            android:title="Featured events"
+            android:icon="@drawable/business"
+            />
+
+
+
+
+
+
+
+    </item>
+
+
+    <item
+        android:id="@+id/navigation_view_category_1q"
+        android:title="@string/navigation_view_category_1">
+
+    <item
+        android:id="@+id/navigation_item_5"
+        android:title="I am attending"
+        android:icon="@drawable/eventacceptedtentativelyfilled24"
+        />
+
+    <item
+        android:id="@+id/navigation_item_6"
+        android:title="I may attend"
+        android:icon="@drawable/eventacceptedtentatively242"
+        />
+
+    <item
+        android:id="@+id/navigation_item_7"
+        android:title="I am not attending"
+        android:icon="@drawable/eventdeclined24"
+        />
+
+
+
+        <item
+            android:id="@+id/navigation_item_8"
+            android:title="Invites"
+            android:icon="@drawable/invitefilled24"
+            />
+        <item
+            android:id="@+id/navigation_item_9"
+            android:title="View on map"
+            android:icon="@drawable/map24"
+            />
+
+
+
+
+
+
+
+
+        <item
+            android:id="@+id/logout"
+            android:title="logout"
+            android:icon="@drawable/logoutroundeddown24"
+            />
+
+</item>
+
+
+
+</menu>

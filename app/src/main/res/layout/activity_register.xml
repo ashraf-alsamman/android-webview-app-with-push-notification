@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/blurbg"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:id="@+id/backicon"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/back"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_weight="0.96">
+
+            <LinearLayout
+                android:weightSum="7"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:background="#ffffff"
+                android:layout_weight="1.02">
+
+
+                <TextView
+                    android:layout_width="298dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/outputView" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6.12">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:textColor="#ffffff"
+                        android:text="or"
+                        android:gravity="center"
+                        android:layout_height="5dp"
+                        android:onClick="sendPostRequest"
+                        android:layout_gravity="left" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.48"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:foregroundGravity="center">
+
+                        <TextView
+                            android:id="@+id/login"
+                            android:layout_width="110dp"
+                            android:textColor="#cccccc"
+                            android:gravity="center"
+                            android:text="Sign in "
+                            android:layout_height="match_parent"
+                            android:onClick="login"
+
+
+                            android:layout_weight="3.25" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="26dp"
+                            android:id="@+id/textView6"
+                            android:background="@drawable/border"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/register"
+                            android:layout_width="110dp"
+                            android:textColor="#993366"
+                            android:text="Register"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.24"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:textColor="#ffffff"
+                            android:text="or"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:onClick="sendPostRequest" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/name"
+                            android:layout_width="0dp"
+                            android:layout_weight="8"
+                            android:textColor="#3d3d3d"
+                            android:hint="Full Name"
+                            android:background="@drawable/border"
+                            android:textColorHint="#cccccc"
+                            android:gravity="center|left"
+                            android:layout_height="40dp"
+                            android:inputType="text"
+                            android:paddingLeft="12dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/or"
+                            android:layout_width="match_parent"
+                            android:textColor="#ffffff"
+                            android:text="or"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:onClick="sendPostRequest" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/phone"
+                            android:layout_width="0dp"
+                            android:layout_weight="8"
+                            android:textColor="#3d3d3d"
+                            android:hint="Mobile"
+                            android:background="@drawable/border"
+                            android:textColorHint="#cccccc"
+                            android:gravity="center|left"
+                            android:layout_height="40dp"
+                            android:inputType="textEmailAddress|phone"
+                            android:paddingLeft="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:textColor="#ffffff"
+                            android:text="or"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:onClick="sendPostRequest" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/email"
+                            android:layout_width="0dp"
+                            android:layout_weight="8"
+                            android:textColor="#3d3d3d"
+                            android:hint="Email"
+                            android:background="@drawable/border"
+                            android:textColorHint="#cccccc"
+                            android:gravity="center|left"
+                            android:layout_height="40dp"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:textColor="#ffffff"
+                            android:text="or"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:onClick="sendPostRequest" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/password"
+                            android:layout_width="0dp"
+                            android:layout_weight="8"
+                            android:textColor="#3d3d3d"
+                            android:hint="Password"
+                            android:background="@drawable/border"
+                            android:textColorHint="#cccccc"
+                            android:gravity="center|left"
+                            android:layout_height="40dp"
+                            android:inputType="textPassword"
+                            android:paddingLeft="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:textColor="#ffffff"
+                            android:text="or"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:onClick="sendPostRequest" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/password_confirmation"
+                            android:layout_width="0dp"
+                            android:layout_weight="8"
+                            android:textColor="#3d3d3d"
+                            android:hint="Confirm password"
+                            android:background="@drawable/border"
+                            android:textColorHint="#cccccc"
+                            android:gravity="center|left"
+                            android:layout_height="40dp"
+                            android:inputType="textPassword"
+                            android:paddingLeft="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:textColor="#ffffff"
+                            android:text="or"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:onClick="sendPostRequest" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/date_of_birth"
+                            android:layout_width="0dp"
+                            android:layout_weight="7.99"
+                            android:textColor="#3d3d3d"
+                            android:hint="Date"
+                            android:background="@drawable/border"
+                            android:textColorHint="#cccccc"
+                            android:gravity="left|center"
+                            android:layout_height="40dp"
+                            android:inputType="date"
+                            android:onClick="showDatePickerDialog"
+
+                            android:paddingLeft="12dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="match_parent"
+                            android:textColor="#ffffff"
+                            android:text="or"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:onClick="sendPostRequest" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="33dp" >
+
+                        <RadioGroup
+                            android:id="@+id/gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:orientation="horizontal"
+                            android:textCursorDrawable="@drawable/color_cursor" >
+                            <RadioButton
+                                android:id="@+id/radioButton2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="male"
+                                android:checked="true"
+                                android:textColor="#993366" />
+                            <RadioButton
+                                android:textCursorDrawable="@drawable/color_cursor"
+                                android:id="@+id/radioButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="47dp"
+                                android:text="female"
+                                android:textColor="#993366"
+                                android:layout_gravity="center_horizontal" />
+
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" >
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.92"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:gravity="left|center"
+                        android:layout_height="0dp" >
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="110dp"
+                            android:textColor="#993366"
+                            android:gravity="center"
+                            android:text="Register"
+                            android:layout_height="50dp"
+                            android:onClick="sendPostRequest"
+                            android:layout_weight="3.25"
+                            android:background="@drawable/borderpurple"
+
+                            android:layout_marginLeft="35dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:gravity="center"
+                android:layout_height="wrap_content" >
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_height="34dp"
+                android:onClick="sendPostRequest" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

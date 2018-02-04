@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_view_category_1"
+        android:title="@string/navigation_view_category_1">
+
+        <item
+            android:id="@+id/navigation_item_1"
+            android:checked="true"
+            android:title="General"
+            android:textSize="40sp"
+            android:icon="@drawable/all"
+
+            />
+
+        <item
+            android:id="@+id/navigation_item_2"
+            android:title="Business"
+            android:textSize="40dp"
+            android:background="#937479"
+            android:icon="@drawable/business"
+            />
+
+        <item
+            android:id="@+id/navigation_item_3"
+            android:checked="true"
+            android:title="Culture"
+            android:icon="@drawable/historical24"
+            />
+
+        <item
+            android:id="@+id/navigation_item_4"
+            android:title="Life"
+            android:icon="@drawable/lifecyclefilled24"
+            />
+
+        <item
+            android:id="@+id/logout"
+            android:title="logout"
+            android:icon="@drawable/logoutroundeddown24"
+            />
+
+    </item>
+
+
+
+</menu>

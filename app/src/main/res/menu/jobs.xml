@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_view_category_1"
+        android:title="@string/navigation_view_category_1">
+
+        <item
+            android:id="@+id/navigation_item_2"
+            android:checked="true"
+            android:title="All jobs"
+            android:textSize="40sp"
+            android:icon="@drawable/all"
+
+            />
+
+        <item
+            android:id="@+id/navigation_item_3"
+            android:title="Featured jobs"
+            android:textSize="40dp"
+            android:background="#937479"
+            android:icon="@drawable/plugin"
+            />
+
+
+
+        <item
+            android:id="@+id/logout"
+            android:title="logout"
+            android:icon="@drawable/logoutroundeddown24"
+            />
+
+    </item>
+
+
+
+</menu>

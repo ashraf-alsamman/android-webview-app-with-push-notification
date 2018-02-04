@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "107386417104",
+    "firebase_url": "https://dott-1218.firebaseio.com",
+    "project_id": "dott-1218",
+    "storage_bucket": "dott-1218.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107386417104:android:7459522a9ded8b63",
+        "android_client_info": {
+          "package_name": "com.dott.webapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107386417104-lqugg7gvg26b8jte83k5rkb3bb2oa6ju.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "107386417104-0040pru42sislr2q4a6j66i91m99lsmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3xOe7VC2VACE6hyQIJDUN-7_9SS_HktA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
